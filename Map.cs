@@ -1,0 +1,7 @@
+namespace EscapeTheMaze
+{
+    class Map
+    {
+        
+    }
+}

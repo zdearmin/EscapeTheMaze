@@ -1,0 +1,15 @@
+Maze Game
+
+Rules:
+1. Using the arrow keys, move through the maze and reach the end within the number of moves available.
+2. If you do not reach the end within number of moves alloted, you lose the game and must restart.
+2. You cannot move through walls and can only move 1 space at a time.
+
+
+Setup for Maze Game:
+- Classes to hold: maze, player, game, program (entry)
+- A grid that contains the maze design
+- An element (player) that moves through the maze based on user input
+- An exit out of the maze once completed
+- A loop that continues as long as the player is still in the maze
+

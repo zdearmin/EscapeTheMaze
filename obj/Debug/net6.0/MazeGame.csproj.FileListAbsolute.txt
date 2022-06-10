@@ -1,0 +1,15 @@
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\bin\Debug\net6.0\MazeGame.exe
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\bin\Debug\net6.0\MazeGame.deps.json
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\bin\Debug\net6.0\MazeGame.runtimeconfig.json
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\bin\Debug\net6.0\MazeGame.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\bin\Debug\net6.0\MazeGame.pdb
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.GeneratedMSBuildEditorConfig.editorconfig
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.AssemblyInfoInputs.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.AssemblyInfo.cs
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\refint\MazeGame.dll
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.pdb
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\MazeGame.genruntimeconfig.cache
+D:\ElevenFiftyProjects\codingFoundations\dotnetProjects\MazeGame\obj\Debug\net6.0\ref\MazeGame.dll
