@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\MazeGame\\MazeGame.csproj",
-      "projectName": "MazeGame",
-      "projectPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\MazeGame\\MazeGame.csproj",
+      "projectUniqueName": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj",
+      "projectName": "EscapeTheMaze",
+      "projectPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj",
       "packagesPath": "C:\\Users\\zachd\\.nuget\\packages\\",
-      "outputPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\MazeGame\\obj\\",
+      "outputPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\zachd\\AppData\\Roaming\\NuGet\\NuGet.Config"
