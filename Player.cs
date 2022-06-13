@@ -1,9 +1,10 @@
+using static System.Console;
 namespace EscapeTheMaze
 {
     class Player
     {
         public int X { get; set; }
-              public int y { get; set;}
+              public int Y { get; set;}
               private string PlayerMarker;
               private ConsoleColor PlayerColor;
 
@@ -11,20 +12,18 @@ namespace EscapeTheMaze
         public Player(int initialX, int initialY)
             {
               X = initialX;
-              y = initialY;
+              Y = initialY;
               PlayerMarker = "O";
-              PlayerColor = Console.Red;
+              PlayerColor = ConsoleColor.Red;
 
             }
 
             public void Draw()
             {
               ForegroundColor = PlayerColor;
-              Console.SetCursorPosition(X , Y);
-              Console.Write(PlayerMarker);
-              Console.ResetColor();
+              SetCursorPosition(X, Y);
+              Write(PlayerMarker);
+              ResetColor();
             }
-        
-        
     }
 }

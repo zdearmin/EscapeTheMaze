@@ -1,6 +1,7 @@
+using static System.Console;
 namespace EscapeTheMaze
 {
-    internal class NewBaseType
+    class Map
     {
         private string[,] Grid;
         private int Rows;
@@ -20,7 +21,7 @@ namespace EscapeTheMaze
                 for (int x = 0; x < Cols; x++)
                 {
                     string element = Grid[y, x];
-                    Console.SetCursorPosition(x, y);
+                    SetCursorPosition(x, y);
                     if (element == "X")
                     {
                         ForegroundColor = ConsoleColor.Green;
@@ -34,35 +35,34 @@ namespace EscapeTheMaze
                 }
             }
         }
-    }
-       
-       public string GetElementAt( int x, int y)
-       {
-         return Grid[y, x];
-       }
-
-     public bool IsPositionWalkable(int x , int y)
-     {
-         //Bounds
-      if (x < 0 || y < 0 || x >=Cols || y >= Rows)
-      {
-          return false;
-      }
-       // Is walkable tile
-       return Grid [y,x] == " " || Grid[y, x] == "X";
-
-     }
-
-
-
-
-
-    internal class NewBaseType : NewBaseType
-    {
-    }
-
-    class Map : NewBaseType
-    {
     
-       }
+       
+        public string GetElementAt(int x, int y)
+        {
+            return Grid[y, x];
+        }
+
+        public bool IsPositionWalkable(int x , int y)
+        {
+         //Bounds
+            if (x < 0 || y < 0 || x >= Cols || y >= Rows)
+            {
+                return false;
+            }
+       // Is walkable tile
+                return Grid [y,x] == " " || Grid[y, x] == "X";
+        }
     }
+
+
+
+
+        // internal class NewBaseType : NewBaseType
+        // {
+        // }
+
+        // class Map : NewBaseType
+        // {
+    
+        // }
+}

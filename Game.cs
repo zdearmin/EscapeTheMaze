@@ -5,7 +5,7 @@ namespace EscapeTheMaze
 {
     class Game 
     {
-        private World MyWorld;
+        private Map MyWorld;
         private Player CurrentPlayer;
 
         // Start of the game, rendering the world and the player, then running the game loop
@@ -27,9 +27,9 @@ namespace EscapeTheMaze
             };
 
             // Renders the world to the console
-            MyWorld = new World(grid);
+            MyWorld = new Map(grid);
             // Renders the player to the console at the position specified
-            Player currentPlayer = new Player(0, 2);
+            CurrentPlayer = new Player(0, 2);
             // Begins the game loop
             RunGameLoop();
         }
@@ -42,7 +42,7 @@ namespace EscapeTheMaze
             WriteLine(" - Use the arrow keys to move");
             WriteLine(" - You are unable to move through walls");
             WriteLine(" - Make your way to the exit of the maze: ");
-            ForgroundColor = ConsoleColor.Green;
+            ForegroundColor = ConsoleColor.Green;
             WriteLine("X");
             ResetColor();
             WriteLine(" - Reach the end of the maze in the number of moves specified");
@@ -72,7 +72,7 @@ namespace EscapeTheMaze
         private void HandlePlayerInput()
         {
             // Reading the user input based on their key input
-            Console.KeyInfo keyInfo = ReadKey(true);
+            ConsoleKeyInfo keyInfo = ReadKey(true);
             ConsoleKey key = keyInfo.Key;
             switch (key)
             {
@@ -120,7 +120,7 @@ namespace EscapeTheMaze
                 // Check player input fromt the keyboard to move the player
                 HandlePlayerInput();
                 // Check if the player reached the exit, and if so, end the game
-                string elementAtPlayPos = MyWorld.Get(CurrentPlayer.X, CurrentPlayer.Y);
+                string elementAtPlayerPos = MyWorld.GetElementAt(CurrentPlayer.X, CurrentPlayer.Y);
                 if (elementAtPlayerPos == "X")
                 {
                     break;
