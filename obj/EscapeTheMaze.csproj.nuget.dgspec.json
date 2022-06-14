@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj": {}
+    "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\ConsoleGame\\EscapeTheMaze\\EscapeTheMaze.csproj": {}
   },
   "projects": {
-    "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj": {
+    "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\ConsoleGame\\EscapeTheMaze\\EscapeTheMaze.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj",
+        "projectUniqueName": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\ConsoleGame\\EscapeTheMaze\\EscapeTheMaze.csproj",
         "projectName": "EscapeTheMaze",
-        "projectPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj",
+        "projectPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\ConsoleGame\\EscapeTheMaze\\EscapeTheMaze.csproj",
         "packagesPath": "C:\\Users\\zachd\\.nuget\\packages\\",
-        "outputPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\obj\\",
+        "outputPath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\ConsoleGame\\EscapeTheMaze\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\zachd\\AppData\\Roaming\\NuGet\\NuGet.Config"

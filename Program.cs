@@ -1,4 +1,6 @@
-﻿namespace EscapeTheMaze
+﻿using static System.Console;
+
+namespace EscapeTheMaze
 {
     class Program
     {

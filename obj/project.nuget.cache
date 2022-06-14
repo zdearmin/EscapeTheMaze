@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ldU2OZpYyEH7GAQabRntVPy485ntICiNcmiGveriW0kM3OAUrro8A/QSfEWgKwS7/J1PQSVHoWUBFY8Fs0TDRQ==",
+  "dgSpecHash": "n3bKoymHU6FbZAK9RwVz4qCKVtAWVEu06OCWsGh+B84wpl3bIFcs2RgTqovqmYok2HkOTZzGh0kyDeXlFivETg==",
   "success": true,
-  "projectFilePath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\EscapeTheMaze\\EscapeTheMaze.csproj",
+  "projectFilePath": "D:\\ElevenFiftyProjects\\codingFoundations\\dotnetProjects\\ConsoleGame\\EscapeTheMaze\\EscapeTheMaze.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

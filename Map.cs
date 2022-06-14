@@ -36,7 +36,6 @@ namespace EscapeTheMaze
             }
         }
     
-       
         public string GetElementAt(int x, int y)
         {
             return Grid[y, x];
@@ -53,16 +52,4 @@ namespace EscapeTheMaze
                 return Grid [y,x] == " " || Grid[y, x] == "X";
         }
     }
-
-
-
-
-        // internal class NewBaseType : NewBaseType
-        // {
-        // }
-
-        // class Map : NewBaseType
-        // {
-    
-        // }
 }
