@@ -1,3 +1,4 @@
+using System;
 // The static system console class allows us to enter console commands (e.g. WriteLine();) 
 // Without typing the full path (e.g. System.Console.WriteLine();)
 using static System.Console;
@@ -6,7 +7,9 @@ namespace EscapeTheMaze
 {
     class Game
     {
+        // References the Map class and creates a new field called CurrentMap
         private Map CurrentMap;
+        // References the Player class and creates a new field called CurrentPlayer
         private Player CurrentPlayer;
         // Start of the game, rendering the world and the player, then running the game loop
         public void Start()
@@ -15,18 +18,24 @@ namespace EscapeTheMaze
             Title = "Welcome to Escape The Maze!";
             // Hide flashing cursor from console
             CursorVisible = false;
-
+            // Runs the RunMainMenu Method
             RunMainMenu();
         }
 
+        // Responible for housing items for our main menu
         private void RunMainMenu()
         {
+            // The @ symbol allows for multi line text
             string prompt = @"Welcome to Escape The Maze!
 Use the arrow keys and press 'Enter' to make your selection.";
+            // The string array holding our menu options
             string[] options = {"Play", "About", "Exit" };
+            // Creating a new variable menu constructor and its two parameter (prompt and options)
             Menu mainMenu = new Menu(prompt, options);
+            // Calling in our run method from the menu class and storing it in an int
             int selectedIndex = mainMenu.Run();
-
+            // This switch will output a prompt and execute one of the methods,
+            // based on which option is selected
             switch (selectedIndex)
             {
                 case 0:
@@ -41,11 +50,13 @@ Use the arrow keys and press 'Enter' to make your selection.";
             }
         }
 
+        // The ExitGame method to clear the console and exit the game
         private void ExitGame()
         {
-            WriteLine("Press any key to exit");
-            ReadKey(true);
             Clear();
+            WriteLine("Press any key to exit");
+            // ReadKey(true) will allow any key to be pressed so the command can be executed
+            ReadKey(true);
             Environment.Exit(0);
         }
 
@@ -58,6 +69,7 @@ Use the arrow keys and press 'Enter' to make your selection.";
             RunMainMenu();
         }
 
+        // The play game method calls in the game loop method
         private void PlayGame()
         {
             // Begins the game loop
@@ -67,14 +79,17 @@ Use the arrow keys and press 'Enter' to make your selection.";
         // Text that is displayed at the beginning of the game
         private void DisplayIntro()
         {
+            // Clears the console once the game starts
             Clear();
             WriteLine("Welcome to Escape The Maze!");
             WriteLine("\nRules:");
             WriteLine(" - Use the arrow keys to move");
             WriteLine(" - You are unable to move through walls");
             Write(" - Move to the exit of the Maze: ");
+            // Changes the color printed to the console
             ForegroundColor = ConsoleColor.Green;
             WriteLine("X");
+            // Resets the console color back to default so not everything afterwards is green
             ResetColor();
             // WriteLine(" - Reach the end of the maze in the number of moves specified");
             WriteLine("\n*Press any key to start*");
@@ -84,7 +99,9 @@ Use the arrow keys and press 'Enter' to make your selection.";
         // Text that is displayed at the end of the game
         private void DisplayOutro()
         {
+            // Clears the console once the game is completed
             Clear();
+            // Prints the prompt and options to the console, same as the main menu process
             string prompt = "CONGRATULATIONS! You escaped the maze!";
             string[] options = {"Next Level", "Play Again", "Main Menu", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
@@ -159,6 +176,10 @@ Use the arrow keys and press 'Enter' to make your selection.";
                         CurrentPlayer.X += 1;
                     }
                     break;
+                case ConsoleKey.Escape:
+                    Clear();
+                    ExitGame();
+                    break;
                 default:
                     break;
             }
@@ -169,7 +190,7 @@ Use the arrow keys and press 'Enter' to make your selection.";
         {
             // Loads the DisplayIntro() method
             DisplayIntro();
-
+            
             string[,] grid = LevelManager.ParseFileToArray("Level1.txt");
             // Renders the world to the console
             CurrentMap = new Map(grid);
