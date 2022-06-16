@@ -5,7 +5,7 @@ using static System.Console;
 
 namespace EscapeTheMaze
 {
-    class Game
+    class Game 
     {
         // References the Map class and creates a new field called CurrentMap
         private Map CurrentMap;
@@ -28,6 +28,7 @@ namespace EscapeTheMaze
         {
             // The @ symbol allows for multi line text
             string prompt = @"Welcome to Escape The Maze!
+
 Use the arrow keys and press 'Enter' to make your selection.";
             // The string array holding our menu options
             string[] options = {"Play", "Select Level", "About", "Exit" };
@@ -217,14 +218,14 @@ Use the arrow keys and press 'Enter' to make your selection.";
             Clear();
             // Prints the prompt and options to the console, same as the main menu process
             string prompt = "CONGRATULATIONS! You escaped the maze!";
-            string[] options = {"Next Level", "Play Again", "Main Menu", "Exit" };
+            string[] options = {"Select Level", "Play Again", "Main Menu", "Exit" };
             Menu mainMenu = new Menu(prompt, options);
             int selectedIndex = mainMenu.Run();
 
             switch (selectedIndex)
             {
                 case 0:
-                    // NextLevel();
+                    LevelSelctor();
                     break;
                 case 1:
                     PlayGame();

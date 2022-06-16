@@ -31,21 +31,21 @@ namespace EscapeTheMaze
                     // If selecedIndex (or option) is selected, do this
                     prefix = "** ";
                     suffix = " **";
-                    ForegroundColor = ConsoleColor.Black;
-                    BackgroundColor = ConsoleColor.White;
+                    ForegroundColor = ConsoleColor.White;
+                    BackgroundColor = ConsoleColor.Black;
                 }
                 else
                 {
                     // Else, do this
                     prefix = " ";
                     suffix = " ";
-                    ForegroundColor = ConsoleColor.White;
+                    ForegroundColor = ConsoleColor.DarkGray;
                     BackgroundColor = ConsoleColor.Black;
                 }
                 // Interpolating the strings above
                 WriteLine($"{prefix} {currentOption} {suffix}");
             }
-
+            // Resets colors printed to console
             ResetColor();
         }
 

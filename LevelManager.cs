@@ -6,12 +6,6 @@ namespace EscapeTheMaze
 {
     class LevelManager
     {   
-        // protected Game MyGame;
-
-        // public LevelManager(Game game)
-        // {
-        //     MyGame = game;
-        // }
         // Grid of strings that parses .txt file into an array
         public static string[,] ParseFileToArray(string filePath)
         {
