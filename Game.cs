@@ -66,7 +66,7 @@ Use the arrow keys and press 'Enter' to make your selection.";
         {
             Clear();
             string prompt = "Select which level you would like to play.";
-            string[] options = {"Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Return To Main Menu" };
+            string[] options = {"Level 1", "Level 2", "Level 3", "Level 4", "Level 5", "Level 6", "Level 7", "Level 8", "Level 9", "Level 10", "Return To Main Menu" };
             // Creating a new variable menu constructor and its two parameter (prompt and options)
             Menu mainMenu = new Menu(prompt, options);
             // Calling in our run method from the menu class and storing it in an int
@@ -166,6 +166,96 @@ Use the arrow keys and press 'Enter' to make your selection.";
                     DisplayOutro();
                     break;
                 case 5:
+                    DisplayIntro();
+                    string[,] grid6 = LevelManager.ParseFileToArray("Level6.txt");
+                    CurrentMap = new Map(grid6);
+                    CurrentPlayer = new Player(3, 12);
+                    while (true)
+                    {
+                    DrawMap();
+                    HandlePlayerInput();
+                    string elementAtPlayerPos = CurrentMap.GetElementAt(CurrentPlayer.X, CurrentPlayer.Y);
+                    if (elementAtPlayerPos == "X")
+                    {
+                        break;
+                    }
+                    System.Threading.Thread.Sleep(20);
+                    }
+                    DisplayOutro();
+                    break;
+                case 6:
+                    DisplayIntro();
+                    string[,] grid7 = LevelManager.ParseFileToArray("Level7.txt");
+                    CurrentMap = new Map(grid7);
+                    CurrentPlayer = new Player(100, 26);
+                    while (true)
+                    {
+                    DrawMap();
+                    HandlePlayerInput();
+                    string elementAtPlayerPos = CurrentMap.GetElementAt(CurrentPlayer.X, CurrentPlayer.Y);
+                    if (elementAtPlayerPos == "X")
+                    {
+                        break;
+                    }
+                    System.Threading.Thread.Sleep(20);
+                    }
+                    DisplayOutro();
+                    break;
+                case 7:
+                    DisplayIntro();
+                    string[,] grid8 = LevelManager.ParseFileToArray("Level8.txt");
+                    CurrentMap = new Map(grid8);
+                    CurrentPlayer = new Player(89, 19);
+                    while (true)
+                    {
+                    DrawMap();
+                    HandlePlayerInput();
+                    string elementAtPlayerPos = CurrentMap.GetElementAt(CurrentPlayer.X, CurrentPlayer.Y);
+                    if (elementAtPlayerPos == "X")
+                    {
+                        break;
+                    }
+                    System.Threading.Thread.Sleep(20);
+                    }
+                    DisplayOutro();
+                    break;
+                case 8:
+                    DisplayIntro();
+                    string[,] grid9 = LevelManager.ParseFileToArray("Level9.txt");
+                    CurrentMap = new Map(grid9);
+                    CurrentPlayer = new Player(79, 39);
+                    while (true)
+                    {
+                    DrawMap();
+                    HandlePlayerInput();
+                    string elementAtPlayerPos = CurrentMap.GetElementAt(CurrentPlayer.X, CurrentPlayer.Y);
+                    if (elementAtPlayerPos == "X")
+                    {
+                        break;
+                    }
+                    System.Threading.Thread.Sleep(20);
+                    }
+                    DisplayOutro();
+                    break;
+                case 9:
+                    DisplayIntro();
+                    string[,] grid10 = LevelManager.ParseFileToArray("Level10.txt");
+                    CurrentMap = new Map(grid10);
+                    CurrentPlayer = new Player(1, 1);
+                    while (true)
+                    {
+                    DrawMap();
+                    HandlePlayerInput();
+                    string elementAtPlayerPos = CurrentMap.GetElementAt(CurrentPlayer.X, CurrentPlayer.Y);
+                    if (elementAtPlayerPos == "X")
+                    {
+                        break;
+                    }
+                    System.Threading.Thread.Sleep(20);
+                    }
+                    DisplayOutro();
+                    break;
+                case 10:
                     RunMainMenu();
                     break;
             }
@@ -293,7 +383,7 @@ Use the arrow keys and press 'Enter' to make your selection.";
                     break;
                 case ConsoleKey.Escape:
                     Clear();
-                    ExitGame();
+                    RunMainMenu();
                     break;
                 default:
                     break;
