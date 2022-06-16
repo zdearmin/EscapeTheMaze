@@ -5,7 +5,7 @@ using System.IO;
 namespace EscapeTheMaze
 {
     class LevelManager
-    {
+    {   
         // protected Game MyGame;
 
         // public LevelManager(Game game)

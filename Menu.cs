@@ -4,10 +4,12 @@ namespace EscapeTheMaze
 {
     class Menu
     {
+        // Properties for the menu
         private int SelectedIndex;
         private string[] Options;
         private string Prompt;
 
+        // The menu constructor
         public Menu(string prompt, string[] options)
         {
             Prompt = prompt;
@@ -15,6 +17,7 @@ namespace EscapeTheMaze
             SelectedIndex = 0;
         }
 
+        // How the menu looks when it is displayed to the user
         private void DisplayOptions()
         {
             WriteLine(Prompt);
@@ -25,6 +28,7 @@ namespace EscapeTheMaze
                 string suffix;
                 if (i == SelectedIndex)
                 {
+                    // If selecedIndex (or option) is selected, do this
                     prefix = "** ";
                     suffix = " **";
                     ForegroundColor = ConsoleColor.Black;
@@ -32,11 +36,13 @@ namespace EscapeTheMaze
                 }
                 else
                 {
+                    // Else, do this
                     prefix = " ";
                     suffix = " ";
                     ForegroundColor = ConsoleColor.White;
                     BackgroundColor = ConsoleColor.Black;
                 }
+                // Interpolating the strings above
                 WriteLine($"{prefix} {currentOption} {suffix}");
             }
 
@@ -57,6 +63,7 @@ namespace EscapeTheMaze
                 // Update selectedIndex based on arrow keys.
                 if (keyPressed == ConsoleKey.UpArrow)
                 {
+                    // This if statement keeps cursor from going off top and bottom of menu when arrow keys are pressed
                     SelectedIndex--;
                     if (SelectedIndex == -1)
                     {
